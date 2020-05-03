@@ -1,0 +1,30 @@
+name: CI/CD
+
+on:
+  pull_request:
+    branches:
+      - master # CI (pr validation)
+  push:
+    branches:
+      - master # CI (ci package)
+    tags:
+      - v*     # CD (release package)
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '3.1.201'
+        source-url: https://nuget.pkg.github.com/marcusturewicz/index.json
+      env:
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    - run: dotnet build src/jsonv -c Release
+    - run: dotnet test test/jsonv.Tests -c Release
+    - run: dotnet pack src/jsonv -c Release
+    - run: dotnet nuget push src/jsonv/bin/Release/*.nupkg
+      if: github.event_name == 'push' && startswith(github.ref, 'refs/heads')
+    - run: dotnet nuget push src/jsonv/bin/Release/*.nupkg -k ${{secrets.NUGET_ORG_API_KEY}} -s https://api.nuget.org/v3/index.json
+      if: github.event_name == 'push' && startswith(github.ref, 'refs/tags')
