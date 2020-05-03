@@ -8,7 +8,6 @@
     <PackAsTool>true</PackAsTool>
      <!-- NuGet package metadata -->
     <PackageId>jsonv</PackageId>
-    <PackageVersion>1.0.0-alpha.1</PackageVersion>
     <Description>A .NET Tool to validate JSON files on disk</Description>
     <Authors>Marcus Turewicz, DEVCommunity</Authors>
     <PackageTags>json json-validation json-validator</PackageTags>
@@ -21,7 +20,9 @@
   <ItemGroup>
     <PackageReference Include="System.CommandLine.DragonFruit" Version="0.3.0-alpha.20214.1" />
     <!-- SourceLink package for GitHub -->
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>    
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <!-- Versioning package -->
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.1.91" PrivateAssets="All" />
   </ItemGroup>
 
 </Project>
