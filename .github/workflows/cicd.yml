@@ -2,9 +2,15 @@ name: CI/CD
 
 on:
   pull_request:
+    paths-ignore: 
+      - 'README.md'
+      - '.editorconfig'
     branches:
       - master # CI (pr validation)
   push:
+    paths-ignore:
+      - 'README.md'
+      - '.editorconfig'
     branches:
       - master # CI (ci package)
     tags:
