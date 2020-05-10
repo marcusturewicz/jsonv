@@ -13,12 +13,18 @@ namespace JsonValidate
             var (valid, error) = ValidateJson(filePath, allowComments);
 
             if (valid)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("File is valid JSON!");
+            }
             else
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("File is not valid JSON!");
                 Console.WriteLine($"Error: {error}");
             }
+
+            Console.ResetColor();
         }
 
         /// <param name="filePath">The absolute path to the JSON file</param>
@@ -29,8 +35,6 @@ namespace JsonValidate
             {
                 return (false, "File does not exist!");
             }
-
-            Console.WriteLine($"File path is: {filePath}, allowing comments: {allowComments}");
 
             try
             {
