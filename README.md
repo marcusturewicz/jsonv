@@ -1,6 +1,8 @@
 # jsonv
 
 ![build status](https://github.com/marcusturewicz/jsonv/workflows/CI/CD/badge.svg)
+![Nuget](https://img.shields.io/nuget/v/jsonv)
+![Nuget](https://img.shields.io/nuget/dt/jsonv)
 
 Repo for blog series on creating a .NET Tool
 - [Part 1: Feeding the Dragon](https://dev.to/marcusturewicz/creating-a-net-tool-part-1-feeding-the-dragon-3p58)
