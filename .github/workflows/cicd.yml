@@ -6,13 +6,13 @@ on:
       - 'README.md'
       - '.editorconfig'
     branches:
-      - master # CI (pr validation)
+      - main # CI (pr validation)
   push:
     paths-ignore:
       - 'README.md'
       - '.editorconfig'
     branches:
-      - master # CI (ci package)
+      - main # CI (ci package)
     tags:
       - v*     # CD (release package)
 
