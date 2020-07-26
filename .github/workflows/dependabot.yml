@@ -4,8 +4,7 @@ updates:
     directory: "/src/jsonv"
     schedule:
       interval: "weekly"
-updates:
   - package-ecosystem: "nuget"
-    directory: "/tests/jsonv.Tests"
+    directory: "/test/jsonv.Tests"
     schedule:
-      interval: "weekly"      
+      interval: "weekly"
