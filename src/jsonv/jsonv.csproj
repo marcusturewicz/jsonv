@@ -3,7 +3,7 @@
   <PropertyGroup>
     <!-- Console app metadata -->
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1;netcoreapp3.1;net5.0</TargetFramework>
+    <TargetFrameworks>netcoreapp3.1;net5.0</TargetFrameworks>
     <!-- Tool metadata -->
     <PackAsTool>true</PackAsTool>
      <!-- NuGet package metadata -->
