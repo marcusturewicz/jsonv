@@ -22,7 +22,7 @@
     <!-- SourceLink package for GitHub -->
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
     <!-- Versioning package -->
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.3.37" PrivateAssets="All" />
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.194" PrivateAssets="All" />
   </ItemGroup>
     
   <ItemGroup>
