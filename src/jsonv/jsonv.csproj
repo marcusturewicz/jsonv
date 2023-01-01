@@ -3,7 +3,7 @@
   <PropertyGroup>
     <!-- Console app metadata -->
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>netcoreapp3.1;net5.0</TargetFrameworks>
+    <TargetFrameworks>net6.0</TargetFrameworks>
     <!-- Tool metadata -->
     <PackAsTool>true</PackAsTool>
      <!-- NuGet package metadata -->
@@ -18,13 +18,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.CommandLine.DragonFruit" Version="0.3.0-alpha.21216.1" />
+    <PackageReference Include="System.CommandLine.DragonFruit" Version="0.4.0-alpha.22272.1" />
     <!-- SourceLink package for GitHub -->
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
     <!-- Versioning package -->
     <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.255" PrivateAssets="All" />
   </ItemGroup>
-    
+
   <ItemGroup>
     <None Include="..\..\logo.png" Pack="true" PackagePath=""/>
   </ItemGroup>
