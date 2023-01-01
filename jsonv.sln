@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{98843985-CC4E-4C3F-9AC0-28DF96EE19E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jsonv", "src\jsonv\jsonv.csproj", "{A41B14BB-BD3F-4A20-ADCF-EF7307E6F983}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{177AD39C-16D2-4CC1-8A1D-7AAD7DA1791B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jsonv.Tests", "test\jsonv.Tests\jsonv.Tests.csproj", "{F94A5B41-678B-48D5-9B0A-3E4BAE61CD14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A41B14BB-BD3F-4A20-ADCF-EF7307E6F983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A41B14BB-BD3F-4A20-ADCF-EF7307E6F983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A41B14BB-BD3F-4A20-ADCF-EF7307E6F983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A41B14BB-BD3F-4A20-ADCF-EF7307E6F983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F94A5B41-678B-48D5-9B0A-3E4BAE61CD14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F94A5B41-678B-48D5-9B0A-3E4BAE61CD14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F94A5B41-678B-48D5-9B0A-3E4BAE61CD14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F94A5B41-678B-48D5-9B0A-3E4BAE61CD14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A41B14BB-BD3F-4A20-ADCF-EF7307E6F983} = {98843985-CC4E-4C3F-9AC0-28DF96EE19E0}
+		{F94A5B41-678B-48D5-9B0A-3E4BAE61CD14} = {177AD39C-16D2-4CC1-8A1D-7AAD7DA1791B}
+	EndGlobalSection
+EndGlobal
